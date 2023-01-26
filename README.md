@@ -31,13 +31,14 @@ If you want to run the notebook you will need to change the download paths to wh
 The dataset contains 5,863 X-Ray images (JPEG) that are split into 2 categories (Pneumonia/Normal), the dataset is highly unbalanced with more normal cases being represented. For each category the images are split into 3 folders (train, test, val) with Pneumonia/Normal cases appearing in all folders
 Chest X-ray images (anterior-posterior) were selected from retrospective cohorts of pediatric patients of one to five years old from Guangzhou Women and Children’s Medical Center, Guangzhou. All chest X-ray imaging was performed as part of patients’ routine clinical care.
 For the analysis of chest x-ray images, all chest radiographs were initially screened for quality control by removing all low quality or unreadable scans. The diagnoses for the images were then graded by two expert physicians before being cleared for training the AI system. In order to account for any grading errors, the evaluation set was also checked by a third expert.
+
 # Modeling
 As there was limited data my main focus was on transfer models. I did some baseline models and experimented with a few things but quickly moved onto testing three transfer models (VGG16, VGG19, and Xception). All of these models were created for the Imagenet classification competition. For more information visit this [link](https://dl.acm.org/doi/10.1145/3065386) 
 
 # Evaluation
 <img src="https://github.com/DivisiBULL/ML_Pneumonia_Detection/blob/main/imgs/classification%20report%20pneumonia%20detection.PNG">
 
-The model was able to generalize decently well. Precision on the 1 label (pneumonia) is what I optimized the model for. Given the business case, this model was only ever intended to be used as an aid to qualified doctors. To be able to pick out from a large pool of patients which ones are very likely to have pneumonia. The doctors will still have to go through each case.
+The model was able to generalize decently well. Precision on the 1 label (pneumonia) is what I optimized the model for. The model was able to have a prediction accuracy of 91% (not optomized for precision). Given the business case, this model was able to perform pretty well. The model was only ever intended to be used as an aid to qualified doctors, to be able to help quickly identify a large number of cases of pneumonia cases. Which will allow for faster starts to treatment and recovery. The doctors will still have to manually go through each case to ensure accuracy.
 
 
 # Conclussion
