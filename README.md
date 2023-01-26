@@ -3,7 +3,9 @@ phase 4 final project
 
 # Repo Structure
 | PowerPoint - An accompanying powerpoint presentation
+
 | Imgs - Stores imgs that are used in the README
+
 | Notebook - The main bulk of the project. Contains all the code and explanations throughout
 
 # Introduction
