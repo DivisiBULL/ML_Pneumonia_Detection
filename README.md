@@ -37,15 +37,15 @@ The model was able to generalize decently well. Precision on the 1 label (pneumo
 
 Traditionally with medical cases you want to optimize for recall, as reporting a false negative (someone does not have pneumonia when they actually do) will likely be a worse outcome than a false positive (prescribing treatment to a healthy person). In my business case I chose to optimize precision to try and create a system that could be very confident in it's prediction and be able to quickly get the patient treatment.
 
-The model was only ever intended to be used as an aid to qualified doctors, to be able to help quickly identify a large number of cases of pneumonia cases. Which will allow for faster starts to treatment and recovery. The doctors will still have to manually go through each case to ensure accuracy.
+The model was only ever intended to be used as an aid to qualified doctors, to be able to help quickly identify a large number of pneumonia cases. Which will allow for faster starts to treatment and recovery. The doctors will still have to manually go through each case to ensure accuracy.
 
 
-# Conclussion
+# Conclusion
 
 We all know even the best doctors can make mistakes. Humans can’t be right 100% of the time. But it can be hard to compare percentages between the two. There is not widespread data on doctors accuracy in pneumonia diagnosis. There are a few peer reviewed cases but they are only on a few hundred cases. So I don’t know if the average doctor correctly identifies pneumonia better or worse than the model. 
 This model is still only intended to be able to aid doctors in Pneumonia screening, not replace them. 
 
-There is also limited data on the error rates of doctors making it difficult to have a evaluation metric to aim for. I will include two links [link](https://pubmed.ncbi.nlm.nih.gov/18299488/) and [link](https://pubmed.ncbi.nlm.nih.gov/15759443/) to publications on this matter. But neither of them are that large of a scale of analysis and do not provide a concrete average error rate.
+There is also limited data on the error rates of doctors making it difficult to have an evaluation metric to aim for. I will include two links: [link](https://pubmed.ncbi.nlm.nih.gov/18299488/) and [link](https://pubmed.ncbi.nlm.nih.gov/15759443/), to publications on this matter. But neither of them are that large of a scale of analysis and do not provide a concrete average error rate.
 
 
 # Repo Structure
